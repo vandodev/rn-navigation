@@ -7,9 +7,23 @@ const Stack = createNativeStackNavigator()
 
 export function StackRoutes() {
   return (
-    <Stack.Navigator initialRouteName="home">
-      <Stack.Screen name="home" component={Home} />
-      <Stack.Screen name="product" component={Product} />
+    <Stack.Navigator
+      initialRouteName="home"
+      screenOptions={{ headerShown: false }}
+    >
+      
+      <Stack.Screen 
+        name="home" 
+        component={Home} 
+        // options={{headerShown:false}}
+      />
+
+      <Stack.Screen
+        name="product" 
+        component={Product}
+        // options={{headerTitle:"inicio"}}
+      />
+
     </Stack.Navigator>
   )
 }
