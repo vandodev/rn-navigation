@@ -14,7 +14,7 @@ export function Home({ navigation }: StackRoutesProps<'home'>) {
         
         <ButtonIcon
           name="add-circle"
-          onPress={() => navigation.navigate('product')}
+          onPress={() => navigation.navigate('product', { id: '153' })}
         />
 
       </Header>
